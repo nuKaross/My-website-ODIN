@@ -1,4 +1,16 @@
-function lastletter(x){
-   return x.slice(-1);
+let answer = parseInt(prompt('Enter the number'));
+
+for (let i = 1;i <= answer;i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log('BUZZFIZZ');
+}   
+    else if ( i % 5 === 0){
+    console.log('Buzz');
 }
-console.log(lastletter("askfm"));
+    else if (i % 3 === 0) {
+    console.log('fizz');
+    }
+    else{
+    console.log(i);
+} 
+}
